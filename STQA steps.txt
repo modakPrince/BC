@@ -1,0 +1,263 @@
+
+practical 1 – Install Selenium IDE and Create a Test Suite**
+
+**Aim:** Install Selenium IDE and create a test suite with at least 4 test cases.
+
+### Steps:
+
+1. Open **Google Chrome** browser.
+2. Search **“Selenium IDE Chrome extension”**.
+3. Click the official Selenium IDE link → select **“Add to Chrome”**.
+4. After installation, open Selenium IDE from Chrome extensions.
+5. Click **“Create a new project”** and name it (e.g., `MyFirstSuite`).
+6. Click **“Record a new test in a new project.”**
+7. Enter any sample website URL (e.g., [https://www.google.com](https://www.google.com)).
+8. Perform different actions like typing in the search box, clicking a link, etc.
+9. Stop recording; Selenium IDE will save all actions as test steps.
+10. Add at least **4 different test cases** with different web pages or actions.
+11. Save the test suite with a suitable name (e.g., `GoogleTests.side`).
+12. Click **Run All Tests** to execute the suite.
+13. Observe the output (green = success, red = fail).
+14. Check the **Logs & Execution Speed** in the bottom panel.
+15. Save and export the test suite for future use.
+
+---
+
+Practical 2 – Test Suite on Two Different Websites**
+
+**Aim:** Conduct a test suite for two websites using Selenium IDE.
+
+### Steps:
+
+1. Open Chrome → Selenium IDE.
+2. Click **New Project** → name it (e.g., `DualSiteTests`).
+3. Choose **Record New Test** option.
+4. Enter URL of first site (e.g., [https://www.wikipedia.org](https://www.wikipedia.org)).
+5. Perform actions: click link, enter search text, verify content.
+6. Stop recording → save as `WikiTest1`.
+7. Now add another test case for the second site (e.g., [https://www.google.com](https://www.google.com)).
+8. Record actions such as searching and clicking results.
+9. Stop recording → save as `GoogleTest2`.
+10. Combine both test cases in one suite.
+11. Click **Run All** to execute both together.
+12. Verify both pass successfully.
+13. Edit step names and assertions for clarity.
+14. Save your project and export results to file.
+15. Observe console logs for success/failure details.
+
+---
+
+Practical 3 – Selenium RC (Server) with Java**
+
+**Aim:** Install Selenium Server and demonstrate automation using Java.
+
+### Steps:
+
+1. Install **JDK 12** from Oracle’s official site.
+2. Install **Eclipse IDE for Java Developers**.
+3. Download **Selenium Server Standalone (v3.141.59)**.
+4. Download **Selenium Client Driver (Java version)**.
+5. Download **GeckoDriver** from GitHub (for Firefox).
+6. Open Eclipse → Create new **Java Project** named `gcd`.
+7. Create a **package** (e.g., `gcdpackage`) and **class** named `Test`.
+8. Add **Selenium JARs** to project build path (`Add External JARs…`).
+9. Create an HTML file `gcdhtml.html` with GCD calculation code (from PDF).
+10. Open this HTML file in Firefox → copy the URL.
+11. In Eclipse, write **Test.java** code provided.
+12. Paste your local HTML path and GeckoDriver path correctly.
+13. Save and **Run** the Java file.
+14. Observe browser opens, inputs numbers, and displays GCD result.
+15. Console prints output `GCD = <value>`.
+
+---
+
+Practical 4 – Load Testing using Apache JMeter**
+
+**Aim:** Perform load testing using JMeter and analyze results.
+
+### Steps:
+
+1. Install **JDK** (Java required).
+2. Download **Apache JMeter (zip)** from official site.
+3. Extract zip → open folder → go to `bin` folder.
+4. Double-click **ApacheJMeter.jar** to start GUI.
+5. Create a **Test Plan** and rename it `MyLoadTest`.
+6. Right-click Test Plan → **Add → Threads → Thread Group**.
+7. Set **Number of Users = 5**, **Ramp-up = 10**, **Loop Count = 1**.
+8. Right-click Thread Group → Add **Sampler → HTTP Request**.
+9. Enter a target site (e.g., `Server Name: www.google.com`, Path: `/search`).
+10. Add **Listeners** → View Results Tree and View Results in Table.
+11. Save the test plan (`.jmx` file).
+12. Click **Run (Ctrl+R)** → observe results.
+13. Modify thread group to **10 users** and run again.
+14. Compare performance results before and after load.
+15. Export test results for report submission.
+
+---
+
+Practical 4B – Bugzilla (Bug Tracking System)**
+
+**Aim:** Study Bugzilla and create a sample bug report.
+
+### Steps:
+
+1. Visit Bugzilla demo site: [https://bugs.freedesktop.org](https://bugs.freedesktop.org).
+2. Click **“New Account”** and register with your email.
+3. Open email → verify your account.
+4. Login to Bugzilla.
+5. Click **“File a New Bug”**.
+6. Choose Product → `DRI (Direct Rendering Infrastructure)`.
+7. Enter **Component, Summary, Description**.
+8. Click **“Show Advanced Fields”** and fill optional details.
+9. Attach a screenshot of a sample bug (e.g., broken link on a website).
+10. Click **Submit Bug**.
+11. Note the generated **Bug ID**.
+12. Use search bar to find your bug report by ID.
+13. Check status (e.g., NEW, ASSIGNED, FIXED).
+14. Edit or comment on your bug if needed.
+15. Save screenshot of bug report as proof.
+
+Practical 5 – Write & Update Excel File (10 Records)
+
+**Aim:** Write Java program to insert 10 student records into Excel.
+
+### Steps:
+
+1. Open Eclipse → Create new Java Project `p5`.
+2. Create a package (e.g., `excelwrite`).
+3. Download **jxl.jar** (JExcel API).
+4. Add the jar file to **Build Path → Libraries**.
+5. Create a class `Excelwriter`.
+6. Copy code from PDF and paste into class.
+7. Edit student names or marks as desired.
+8. Save and run the program.
+9. Check Eclipse console → “Excel File Created!!!!!” message appears.
+10. Navigate to your workspace → find file `student.xls`.
+11. Open it with Excel → verify student data.
+12. Confirm total marks column calculated correctly.
+13. Change data → rerun program to verify updates.
+14. Observe the Excel file overwrites with new data.
+15. Save screenshot of Excel output.
+
+---
+
+Practical 6 – Read Excel File and Select Students**
+
+**Aim:** Read Excel file and display students scoring ≥60.
+
+### Steps:
+
+1. Open Eclipse → New Project `p6`.
+2. Create package `excelread`.
+3. Add **jxl.jar** again to Build Path.
+4. Ensure `student.xls` from Practical 5 exists.
+5. Create class `Excelreader`.
+6. Copy Java code from PDF.
+7. Update file path to your Excel file.
+8. Save the file.
+9. Run the program.
+10. Console displays count of students scoring ≥60.
+11. Verify the number by checking Excel manually.
+12. Modify data and rerun to check dynamic output.
+13. Handle exceptions (if file not found).
+14. Observe results for correctness.
+15. Record output for report.
+
+---
+
+Practical 7 – Automate Facebook Login
+
+**Aim:** Automate login using Selenium WebDriver.
+
+### Steps:
+
+1. Install **JDK**, **Eclipse**, **GeckoDriver**, **Selenium JARs**.
+2. Create new project `p7`.
+3. Create package and class `FB_login`.
+4. Add Selenium JARs via **Build Path**.
+5. Open Facebook → Inspect “email”, “password”, and “login” button → note IDs.
+6. Copy the provided Java code from PDF.
+7. Replace login credentials with test data.
+8. Paste GeckoDriver path in code.
+9. Save and run.
+10. Browser opens → navigates to Facebook.
+11. Enters credentials automatically → logs in.
+12. Console prints **“Verification Successful”** if title matches.
+13. Closes browser automatically.
+14. Check output message in console.
+15. Record test proof for journal.
+
+---
+
+Practical 8 – Count Total Web Objects**
+
+**Aim:** Count total number of web objects (links) on a page.
+
+### Steps:
+
+1. Create new project `p8` in Eclipse.
+2. Add Selenium JARs and GeckoDriver.
+3. Create package `p8` and class `FindAllLinks`.
+4. Copy Java code from PDF.
+5. Set the URL (e.g., `https://www.google.co.in/`).
+6. Save and run.
+7. Firefox opens and loads the website.
+8. Selenium scans for all `<a>` tags (links).
+9. Console lists each link’s text.
+10. Final line displays total number of links.
+11. Verify count manually on the page.
+12. Modify URL and rerun to test other sites.
+13. Observe results for accuracy.
+14. Save console output.
+15. Include screenshot for documentation.
+
+---
+
+Practical 9 – Count Items in Combo Box**
+
+**Aim:** Find number of dropdown items on a web page.
+
+### Steps:
+
+1. Open Notepad → create `combobox.html`.
+2. Add `<select>` tag with multiple `<option>` elements.
+3. Save file in local directory.
+4. Open file in browser → copy its file path (URL).
+5. Open Eclipse → Create project `p9`.
+6. Create package `p9` and class `ComboBox`.
+7. Add Selenium JARs and GeckoDriver.
+8. Paste code from PDF.
+9. Update file path in the `appUrl` variable.
+10. Save and run program.
+11. Browser opens → reads dropdown list.
+12. Console prints each option value.
+13. Displays total number of dropdown items.
+14. Add or remove options → rerun and test.
+15. Save output for record.
+
+---
+
+Practical 10 – Count Checked and Unchecked Checkboxes**
+
+**Aim:** Count number of checked and unchecked checkboxes.
+
+### Steps:
+
+1. Open Notepad → create `multicheckbox.html`.
+2. Add 5 checkboxes (`<input type="checkbox">`).
+3. Save file and open in browser.
+4. Copy its local file path.
+5. Open Eclipse → create project `p10`.
+6. Create package `p10` and class `MultiCheckBox`.
+7. Add Selenium JARs and GeckoDriver.
+8. Copy code from PDF.
+9. Set file path in `appUrl` variable.
+10. Save and run program.
+11. Browser opens the local HTML page.
+12. Selenium finds all checkbox elements.
+13. Console displays each checkbox’s status (checked/unchecked).
+14. Prints total checked
+ and unchecked counts.
+15. Modify HTML file → test different combinations.
+
+---
